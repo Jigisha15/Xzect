@@ -117,8 +117,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   color: white;
+  border-top: 1px solid rgba(128, 128, 128, 0.3);
 }
 
 .middle h1 {
@@ -128,6 +128,14 @@ body {
 .middle h4 {
   font-weight: 500;
   font-size: 20px;
+}
+
+.card-container {
+  margin: 30px 0 30px 0;
+  display: grid;
+  grid-template-columns: 340px 340px 340px 340px;
+  column-gap: 15px;
+  row-gap: 30px;
 }
 
 /* CARD */
@@ -141,6 +149,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .card img {

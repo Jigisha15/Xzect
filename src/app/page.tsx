@@ -80,19 +80,22 @@ export default function Home() {
           Take Your Business to the Next Level with Our Industry-Leading
           Services
         </h4>
-        <div className="card-container"></div>
-        {data.map((items, index) => (
-          <div
-            className="card-inner"
-            key={index}
-          >
-            <Card
-              course={items.course}
-              image={items.image}
-            />
-          </div>
-        ))}
+        <div className="card-container">
+          {data.map((items, index) => (
+            <div
+              className="card-inner"
+              key={index}
+            >
+              <Card
+                course={items.course}
+                image={items.image}
+              />
+            </div>
+          ))}
+        </div>
       </div>
+
+      {/* SOFTWARES */}
 
       {/* FOOTER */}
       <div className="footer">
