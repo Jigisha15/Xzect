@@ -1,5 +1,8 @@
 import Card from './components/Card'
+import Software from './components/Software'
+
 import data from './data/Data'
+import softwares from './data/Software'
 
 import { RiMenu2Fill } from 'react-icons/ri'
 import { BsWhatsapp } from 'react-icons/bs'
@@ -96,6 +99,32 @@ export default function Home() {
       </div>
 
       {/* SOFTWARES */}
+      <div className="software">
+        <h1>Leverage our software & hardware expertise</h1>
+        <p>
+          <span>
+            Use our services and tech expertise to create disruptive products &
+            solutions that can revolutionize your <br />
+          </span>
+          <span>
+            business and stay ahead with evolving technological advancements.
+          </span>
+        </p>
+        <div className="software-container">
+          {softwares.map((item, i) => (
+            <div
+              className="soft-inner"
+              key={i}
+            >
+              <Software
+                image={item.image}
+                lang={item.lang}
+              />
+            </div>
+          ))}
+        </div>
+        <button>Explore Our Entire Tech Stack</button>
+      </div>
 
       {/* FOOTER */}
       <div className="footer">
