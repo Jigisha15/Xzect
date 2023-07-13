@@ -1,7 +1,8 @@
-export default function HomePage() {
+export default function Home() {
+    
     return (
         <div className="home">
-            <h1 className="text-center text-white">Shree Ganesh</h1>
+            <h1>This is home page</h1>
         </div>
     )
 }
