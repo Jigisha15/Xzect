@@ -1,3 +1,6 @@
+import Card from './components/Card'
+import data from './data/Data'
+
 import { RiMenu2Fill } from 'react-icons/ri'
 import { BsWhatsapp } from 'react-icons/bs'
 
@@ -70,8 +73,28 @@ export default function Home() {
         </div>
       </div>
 
-      {/* FOOTER */}
+      {/* CUSTOM SOLUTIONS */}
+      <div className="middle">
+        <h1>Customised Solutions for All Your Business Needs</h1>
+        <h4>
+          Take Your Business to the Next Level with Our Industry-Leading
+          Services
+        </h4>
+        <div className="card-container"></div>
+        {data.map((items, index) => (
+          <div
+            className="card-inner"
+            key={index}
+          >
+            <Card
+              course={items.course}
+              image={items.image}
+            />
+          </div>
+        ))}
+      </div>
 
+      {/* FOOTER */}
       <div className="footer">
         <div className="footer-inner">
           <div className="footer-one">
