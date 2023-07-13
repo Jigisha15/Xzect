@@ -54,8 +54,8 @@ body {
 /* LANDING PAGE */
 
 .landing {
-  max-width: 1400px;
-  height: 500px;
+  max-width: 100vw;
+  height: 600px;
   margin-top: 62px;
   padding: 100px;
   display: flex;
@@ -71,10 +71,10 @@ body {
 .left {
   margin: 200px 100px 0 0;
   width: 600px;
-  height: 700px;
+  height: 800px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .left-top {
@@ -86,6 +86,7 @@ body {
 .left-bottom {
   width: 700px;
   height: 86.4px;
+  margin-top: 100px;
   display: flex;
   justify-content: space-between;
 }
@@ -116,3 +117,114 @@ body {
 }
 
 /* FOOTER */
+.footer {
+  max-width: 100vw;
+  border-top: 3px solid white;
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-inner {
+  width: 92vw;
+  margin-top: 70px;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-one {
+  width: 478.8px;
+  color: white;
+  /* border: 1px solid white; */
+  line-height: 3;
+}
+
+.p1 {
+  line-height: 2.5;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.social ul {
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  list-style: none;
+}
+
+.social ul li {
+  width: 40px;
+  border-radius: 50%;
+  text-align: center;
+  height: 40px;
+}
+
+.social ul li:hover {
+  cursor: pointer;
+}
+
+.fb {
+  background-color: #1877f2;
+}
+
+.ig {
+  background-color: #ce386a;
+}
+
+.lk {
+  background-color: #0a66c2;
+}
+
+.tw {
+  background-color: #1da1f2;
+}
+
+.pt {
+  background-color: #bd081c;
+}
+
+.yt {
+  background-color: #ff0000;
+}
+
+.footer-one h1 {
+  font-size: 24px;
+}
+
+.footer-two {
+  width: 300px;
+}
+
+.footer-three {
+  width: 190px;
+}
+
+.footer-our {
+  width: 190px;
+}
+
+.lists {
+  /* border: 1px solid white; */
+  color: white;
+}
+
+.lists ul {
+  list-style: none;
+  line-height: 2.5;
+}
+
+.lists ul li {
+  font-size: 16px;
+  font-weight: 500;
+  color: grey;
+  line-height: 2.2;
+}
+
+.lists ul li:hover {
+  color: blue;
+  cursor: pointer;
+}
