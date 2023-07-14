@@ -138,9 +138,81 @@ body {
   align-items: center;
 }
 
-.right img {
-  width: 300px;
-  height: 300px;
+/* .right img {
+  width: 400px;
+  height: 400px;
+} */
+
+.box {
+  position: absolute;
+  top: 200px;
+  left: 1000px;
+  transform-origin: 30% 210px 0;
+  transform-style: preserve-3d;
+  transform: rotateX(45deg) rotateY(45deg) rotate(25deg);
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0);
+  }
+  20% {
+    transform: rotateY(1turn);
+  }
+  40% {
+    transform: rotateY(45deg) rotateX(-180deg);
+  }
+  60% {
+    transform: rotateY(45deg) rotateX(180deg);
+  }
+  80% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.top,
+.bottom,
+.b-left,
+.b-right,
+.front,
+.back {
+  background-image: url('https://www.xzect.com/assets/images/xzect-logo.svg');
+  background-size: cover;
+}
+
+.face {
+  border: 6px solid white;
+  width: 360px;
+  height: 360px;
+  position: absolute;
+}
+
+.front {
+  transform: translateZ(180px);
+}
+
+.back {
+  transform: rotateY(180deg) translateZ(180px);
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(180px);
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateZ(180px);
+}
+
+.b-left {
+  transform: rotateY(-90deg) translateZ(180px);
+}
+
+.b-right {
+  transform: rotateY(90deg) translateZ(180px);
 }
 
 .left {

@@ -52,10 +52,18 @@ export default function Home() {
           </div>
         </div>
         <div className="right">
-          <img
+          <div className="box">
+            <div className="top face"></div>
+            <div className="bottom face"></div>
+            <div className="front face"></div>
+            <div className="back face"></div>
+            <div className="b-left face"></div>
+            <div className="b-right face"></div>
+          </div>
+          {/* <img
             src="https://www.xzect.com/assets/images/xzect-logo.svg"
             alt=""
-          />
+          /> */}
         </div>
       </div>
 
