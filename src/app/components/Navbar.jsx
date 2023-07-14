@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import { RiMenu2Fill } from 'react-icons/ri'
+import Image from 'next/image'
 
 const Navbar = () => {
   const [click, setClick] = useState(false)
@@ -16,7 +17,9 @@ const Navbar = () => {
       <div className={click ? 'active' : 'nav'}>
         <div className="inner-nav">
           <span className="span">
-            <img
+            <Image
+              height={38}
+              width={38}
               src="	https://www.xzect.com/assets/images/xzect-logo.svg"
               alt=""
             />

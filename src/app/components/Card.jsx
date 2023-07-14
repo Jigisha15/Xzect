@@ -1,7 +1,11 @@
+import Image from 'next/image'
+
 function Card({ image, course, to }) {
   return (
     <div className="card">
-      <img
+      <Image
+        width={'280'}
+        height={'180'}
         src={image}
         alt=""
       />

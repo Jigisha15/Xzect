@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 function Software({ to, image, lang }) {
   return (
     <a
@@ -5,7 +7,9 @@ function Software({ to, image, lang }) {
       className="soft-card"
       target="_blank"
     >
-      <img
+      <Image
+        height={28}
+        width={28}
         src={image}
         alt=""
       />

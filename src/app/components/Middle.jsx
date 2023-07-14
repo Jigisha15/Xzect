@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const Middle = ({ top, title, info, image }) => {
   return (
@@ -11,7 +12,9 @@ const Middle = ({ top, title, info, image }) => {
           <button>Consult with an Expert</button>
         </div>
         <div className="m-right">
-          <img
+          <Image
+            width={280}
+            height={400}
             src={image}
             alt=""
           />
