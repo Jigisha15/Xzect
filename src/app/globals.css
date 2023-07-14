@@ -8,13 +8,33 @@ body {
 .nav {
   width: 100vw;
   height: 60px;
-  border-bottom: 3px solid white;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-width: 0 0 3px 0;
+  border-image: linear-gradient(to right, #fb2576, #5e76fd, #6df1af) 1;
+  border-style: solid;
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
   top: 0;
   backdrop-filter: blur(15px);
+  z-index: 1;
+}
+
+.active {
+  width: 100vw;
+  height: 60px;
+  background-color: #1a223d;
+  border-width: 0 0 3px 0;
+  border-image: linear-gradient(to right, #fb2576, #5e76fd, #6df1af) 1;
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  /* backdrop-filter: blur(15px); */
+  z-index: 1;
 }
 
 .inner-nav {
@@ -47,6 +67,60 @@ body {
   background-color: inherit;
   width: 48px;
   height: 48px;
+  cursor: pointer;
+}
+
+/* DROP DOWN */
+.dropdown {
+  margin-top: 62px;
+  padding-top: 50px;
+  height: 100vh;
+  border: 1px solid white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: #1d2233;
+  display: flex;
+  justify-content: center;
+  color: #cbeaff;
+}
+
+.dropup {
+  color: pink;
+  margin-top: 62px;
+  background-color: grey;
+  display: none;
+  overflow: hidden;
+  width: 1400px;
+  height: 0;
+  border: 1px solid white;
+}
+
+.drops ul {
+  list-style: none;
+}
+
+.drop-one {
+  width: 300px;
+}
+
+.drop-two {
+  width: 400px;
+}
+
+.drop-three {
+  width: 350px;
+}
+
+.drop-four {
+  width: 350px;
+}
+
+.drops ul li {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 2.2;
   cursor: pointer;
 }
 
@@ -117,6 +191,12 @@ body {
   font-weight: 600;
   font-size: 15px;
   border: 2px solid #5e76fd;
+}
+
+.chat-btn2:hover {
+  border-width: 2px;
+  border-image: linear-gradient(to right, #fb2576, #5e76fd, #6df1af) 1;
+  border-style: solid;
 }
 
 /* MIDDLE */
@@ -239,6 +319,7 @@ body {
   column-gap: 20px;
 }
 
+/* SOFTWARE CARD */
 .soft-card {
   width: 200px;
   height: 53px;
@@ -262,10 +343,70 @@ body {
   font-size: 20px;
 }
 
+/* LOWER */
+.lower {
+  max-width: 100vw;
+  position: relative;
+}
+
+.bgi {
+  background-image: url('https://www.xzect.com/assets/images/patterns/ttten.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100vw;
+  height: 665px;
+}
+
+.bg-text {
+  position: absolute;
+  top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 100px;
+}
+
+.bg-text h1 {
+  font-size: 44px;
+  color: white;
+}
+
+.bg-text h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  background: linear-gradient(to right, #fb2576, #5e76fd, #6df1af);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-text button {
+  font-size: 22px;
+  font-weight: 700;
+  text-shadow: 0px 2px rgb(56, 56, 56);
+  color: white;
+  padding: 12px 32px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  background-image: linear-gradient(145deg, #dd0255 10%, #3047c9, #441fff);
+  transform: 1s ease;
+}
+
+.bg-text button:hover {
+  background-image: linear-gradient(145deg, #3047c9 1%, #441fff 10%, #02c362);
+}
+
 /* FOOTER */
 .footer {
   max-width: 100vw;
-  border-top: 3px solid white;
+  border-width: 3px 0 0 0;
+  border-image: linear-gradient(to right, #fb2576, #5e76fd, #6df1af) 1;
+  border-style: solid;
   background-color: #1e1e1e;
   display: flex;
   justify-content: center;
@@ -283,6 +424,7 @@ body {
   width: 478.8px;
   color: white;
   line-height: 3;
+  font-weight: 600;
 }
 
 .p1 {
@@ -314,24 +456,48 @@ body {
   background-color: #1877f2;
 }
 
+.fb:hover {
+  background-image: linear-gradient(to bottom, #1877f2, rgba(0, 0, 0, 0.5));
+}
+
 .ig {
   background-color: #ce386a;
+}
+
+.ig:hover {
+  background-image: linear-gradient(to bottom, #ce386a, rgba(0, 0, 0, 0.5));
 }
 
 .lk {
   background-color: #0a66c2;
 }
 
+.lk:hover {
+  background-image: linear-gradient(to bottom, #0a66c2, rgba(0, 0, 0, 0.5));
+}
+
 .tw {
   background-color: #1da1f2;
+}
+
+.tw:hover {
+  background-image: linear-gradient(to bottom, #1da1f2, rgba(0, 0, 0, 0.5));
 }
 
 .pt {
   background-color: #bd081c;
 }
 
+.pt:hover {
+  background-image: linear-gradient(to bottom, #bd081c, rgba(0, 0, 0, 0.5));
+}
+
 .yt {
   background-color: #ff0000;
+}
+
+.yt:hover {
+  background-image: linear-gradient(to bottom, #ff0000, rgba(0, 0, 0, 0.5));
 }
 
 .footer-one h1 {
