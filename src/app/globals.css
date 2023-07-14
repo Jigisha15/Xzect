@@ -321,6 +321,8 @@ body {
 
 /* SOFTWARE CARD */
 .soft-card {
+  text-decoration: none;
+  color: black;
   width: 200px;
   height: 53px;
   display: flex;
@@ -441,14 +443,16 @@ body {
   list-style: none;
 }
 
-.social ul li {
+.social ul a {
   width: 40px;
   border-radius: 50%;
   text-align: center;
   height: 40px;
+  cursor: pointer;
+  color: white;
 }
 
-.social ul li:hover {
+.social ul a:hover {
   cursor: pointer;
 }
 
@@ -461,11 +465,19 @@ body {
 }
 
 .ig {
-  background-color: #ce386a;
+  /* background-color: #ce386a; */
+  background-image: linear-gradient(#4c5fd7, #7232bd, #f46f30, #ffdc7d);
 }
 
 .ig:hover {
-  background-image: linear-gradient(to bottom, #ce386a, rgba(0, 0, 0, 0.5));
+  background-image: linear-gradient(
+    to bottom,
+    #4c5fd7,
+    #7232bd,
+    #f46f30,
+    #ffdc7d,
+    rgb(54, 54, 54)
+  );
 }
 
 .lk {

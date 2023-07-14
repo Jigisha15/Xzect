@@ -213,6 +213,7 @@ export default function Home() {
               <Software
                 image={item.image}
                 lang={item.lang}
+                to={item.to}
               />
             </div>
           ))}
@@ -257,27 +258,51 @@ export default function Home() {
 
             <span className="social">
               <ul>
-                <li className="fb">
+                <a
+                  className="fb"
+                  href="https://facebook.com"
+                  target="_blank"
+                >
                   <CgFacebook
                     size={30}
                     style={{ marginTop: '13px' }}
                   />
-                </li>
-                <li className="ig">
+                </a>
+                <a
+                  className="ig"
+                  href="https://instagram.com"
+                  target="_blank"
+                >
                   <BsInstagram size={20} />
-                </li>
-                <li className="lk">
+                </a>
+                <a
+                  className="lk"
+                  href="https://linkedin.com"
+                  target="_blank"
+                >
                   <BiLogoLinkedin size={20} />
-                </li>
-                <li className="tw">
+                </a>
+                <a
+                  className="tw"
+                  href="https://twitter.com"
+                  target="_blank"
+                >
                   <BsTwitter size={20} />
-                </li>
-                <li className="pt">
+                </a>
+                <a
+                  className="pt"
+                  href="https://pinterest.com"
+                  target="_blank"
+                >
                   <FaPinterestP size={20} />
-                </li>
-                <li className="yt">
+                </a>
+                <a
+                  className="yt"
+                  href="https://youtube.com"
+                  target="_blank"
+                >
                   <BsYoutube size={20} />
-                </li>
+                </a>
               </ul>
             </span>
           </div>

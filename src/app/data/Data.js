@@ -4,6 +4,7 @@ const data = [
     image:
       'https://www.xzect.com/assets/images/services/software-and-app-dev.jpg',
     course: 'Software & App Development',
+    to: 'https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene',
   },
   {
     id: 2,

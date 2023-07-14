@@ -1,13 +1,17 @@
-function Software({ image, lang }) {
+function Software({ to, image, lang }) {
   return (
-    <div className="soft-card">
+    <a
+      href={to}
+      className="soft-card"
+      target="_blank"
+    >
       <img
         src={image}
         alt=""
       />
       &nbsp;&nbsp;&nbsp;
       <h1>{lang}</h1>
-    </div>
+    </a>
   )
 }
 
