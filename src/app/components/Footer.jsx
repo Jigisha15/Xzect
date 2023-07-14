@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="bg-text">
           <h1>Innovate. Validate. Launch</h1>
           <h2>
-            <span>Let's transform your idea into reality with our</span>
+            <span>Let&apos;'s transform your idea into reality with our</span>
             <span>MVP develpoment services.</span>
           </h2>
           <button>Book a free consultation!</button>
