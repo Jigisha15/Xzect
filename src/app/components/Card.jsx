@@ -1,4 +1,4 @@
-function Card({ image, course }) {
+function Card({ image, course, to }) {
   return (
     <div className="card">
       <img
@@ -6,7 +6,7 @@ function Card({ image, course }) {
         alt=""
       />
       <h1>{course}</h1>
-      <a href="">Get Started</a>
+      <a href={to}>Get Started</a>
     </div>
   )
 }

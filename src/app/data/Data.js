@@ -1,62 +1,61 @@
 const data = [
   {
-    id: 1,
     image:
       'https://www.xzect.com/assets/images/services/software-and-app-dev.jpg',
     course: 'Software & App Development',
-    to: 'https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene',
+    to: '/app',
   },
   {
-    id: 2,
     image:
       'https://www.xzect.com/assets/images/services/website-dev-and-seo.jpg',
     course: 'Web Development & SEO',
+    to: '/web',
   },
   {
-    id: 3,
     image: 'https://www.xzect.com/assets/images/services/cloud-services.jpg',
     course: 'Cloud Services',
+    to: '/cloud',
   },
   {
-    id: 4,
     image: 'https://www.xzect.com/assets/images/services/robotics.jpg',
     course: 'Robotics & Automation',
+    to: '/robotics',
   },
   {
-    id: 5,
     image:
       'https://www.xzect.com/assets/images/services/3d-printing-and-prototyping.jpg',
     course: '3D Printing & Prototyping',
+    to: '/print',
   },
   {
-    id: 6,
     image: 'https://www.xzect.com/assets/images/services/data-science.jpg',
     course: 'Data Science & Analytics',
+    to: '/ds',
   },
   {
-    id: 7,
     image: 'https://www.xzect.com/assets/images/services/machine-learning.jpg',
     course: 'AI & Machine Learning',
+    to: '/ai',
   },
   {
-    id: 8,
     image: 'https://www.xzect.com/assets/images/services/ar-vr.jpg',
     course: 'IOT, AR & VR',
+    to: '/iot',
   },
   {
-    id: 9,
     image: 'https://www.xzect.com/assets/images/services/blockchain.jpg',
     course: 'Blockchain',
+    to: '/blockchain',
   },
   {
-    id: 10,
     image: 'https://www.xzect.com/assets/images/services/tech-consultancy.jpg',
     course: 'Tech Consultancy',
+    to: '/tech',
   },
   {
-    id: 11,
     image: 'https://www.xzect.com/assets/images/services/research-and-dev.jpg',
     course: 'Research & Development',
+    to: '/research',
   },
 ]
 
